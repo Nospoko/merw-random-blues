@@ -99,7 +99,8 @@ def grid2keys(grid):
 
     values = []
     for value in piano:
-        in_grid = cycle.next()
+        # in_grid = cycle.next()
+        in_grid = next(cycle)
         if in_grid == 1:
             values.append(value)
 

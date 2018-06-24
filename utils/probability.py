@@ -31,7 +31,7 @@ def randomly_draw(values, probabilities):
     if idx >= len(values):
         idx = len(values)-1
         idx = 0
-        print 'halp | randomly_draw()'
+        print('halp | randomly_draw()')
     return values[idx]
 
 def cauchy_pdf(x0, gamma):

@@ -13,8 +13,8 @@ def show_graph(graph, values, savepath = None):
     nverts = len(graph)
     edges = generate_edges(graph)
 
-    print 'Number of vertices:', nverts
-    print 'Number of edges:', len(edges)
+    print('Number of vertices:', nverts)
+    print('Number of edges:', len(edges))
 
     g = ig.Graph(directed = True)
     g.add_vertices(len(graph))

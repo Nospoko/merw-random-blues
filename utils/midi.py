@@ -1,5 +1,5 @@
 import numpy as np
-from utils.MidiFile import MIDIFile
+from utils.MidiFile3 import MIDIFile
 from matplotlib import pyplot as plt
 
 # TODO make transition from ticks to seconds possible
@@ -21,10 +21,10 @@ def matrix_to_midi(notes, filename = 'matrix.mid', tempo = 60):
     time_per_tick = 2**-5
 
     for note in notes:
-        pitch = note[0]
+        pitch = int(note[0])
         start = note[1] * time_per_tick
         stop  = note[2] * time_per_tick
-        vol   = note[3]
+        vol   = int(note[3])
         mf.addNote(track, channel, pitch, start, stop, vol)
 
     # Save as file

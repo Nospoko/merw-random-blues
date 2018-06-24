@@ -1,0 +1,27 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+name = "pypi"
+verify_ssl = true
+
+
+[requires]
+
+python_version = "3.6"
+
+
+[packages]
+
+numpy = "*"
+ipython = "*"
+matplotlib = "*"
+igraph = "*"
+tqdm = "*"
+scipy = "*"
+jgraph = "*"
+pycairo = "*"
+python-igraph = "*"
+
+
+[dev-packages]
+

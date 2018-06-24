@@ -168,7 +168,6 @@ class CuntdownWalker(GraphWalker):
             self.cunter -= 1
             return False
 
-
 class VolumeWalker(GraphWalker):
     def __init__(self, volume = 80):
         # Make the volume graph

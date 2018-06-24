@@ -75,7 +75,7 @@ def doubly_accented_blues_variable_key():
             5: [3],
             6: [0]
             }
-    accent_values = accent_graph.keys()
+    accent_values = list(accent_graph.keys())
     accent_walker = wm.CuntdownWalker(accent_graph,
                                       accent_values)
 
